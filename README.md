@@ -1,1 +1,0 @@
-# AnanyaTripathy.github.io
