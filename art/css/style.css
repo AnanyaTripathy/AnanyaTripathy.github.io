@@ -1,0 +1,100 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+:root {
+
+  /*colors*/
+
+  --cadet-blue-crayola: hsl(240, 10%, 70%);
+  --gold-web-golden: hsl(50, 100%, 54%);
+  --vivid-sky-blue: hsl(196, 84%, 63%);
+  --midnight-blue: hsl(231, 83%, 25%);
+  --minion-yellow: hsl(50, 100%, 64%);
+  --independence: hsl(225, 80%, 30%);
+  --orange-soda: hsl(7, 96%, 61%);
+  --space-cadet: hsl(243, 23%, 0%);
+  --fiery-rose: hsl(353, 83%, 65%);
+  --klein-blue: hsl(230, 80%, 39%);
+  --bluetiful: hsl(222, 88%, 55%);
+  --glaucous: hsl(230, 52%, 63%);
+  --manatee: hsl(254, 7%, 65%);
+  --rufous: hsl(2, 85%, 35%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  
+  --ravenclaw-blue: #03114d;
+  --ravenclaw-gold: #946b2d;
+}
+
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/* End Project Area */ 
+
+
+
+/*---------------------FOOTER-----------------------*/
+
+.footer {
+  background-color: var(--ravenclaw-blue);
+  padding-block: 60px;
+}
+
+.copyright {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 10px;
+}
+
+.copyright-link {
+  display: inline-block;
+  transition: var(--transition-2);
+  font-weight: var(--fw-600);
+}
+
+.copyright-link:is(:hover, :focus) { color: var(--white); }
+
+.footer-list {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.footer-list * { display: inline-block; }
+
+.footer-list > li:not(:last-child) { margin-inline-end: 40px; }
+
+.footer-link { transition: var(--transition-2); }
+
+.footer-link:is(:hover, :focus) { color: var(--white); }
